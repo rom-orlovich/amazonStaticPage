@@ -23,6 +23,12 @@ a {
   color: #b22a07;
 }
 
+.button {
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
 /*main */
 /*advertising_bar */
 #advertising_bar {
@@ -153,42 +159,60 @@ a {
 }
 /* product details section right col*/
 #right_col {
+  padding: 2rem;
   max-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .addCart_container {
   border: 1px solid grey;
   min-width: fit-content;
   width: 14rem;
-  height: 10rem;
+  height: 8rem;
   border-radius: 5px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   justify-content: space-around;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .addCart_button {
   display: flex;
-  height: 3rem;
+  height: 2rem;
   flex-direction: column;
   gap: 0.5rem;
 }
-.addCart_button button {
+
+.addCart_button button,
+.addToList button {
   width: 100%;
-  background-color: #ffd814;
   border: none;
   border-radius: 8px;
   padding: 0.4rem 0;
+  cursor: pointer;
+}
+.addCart_button button {
+  background-color: #ffd814;
 }
 .addToList {
   border-top: 1px solid #e0e0e0;
   padding-top: 0.5rem;
 }
-.addToList button {
-  border-radius: 8px;
-  padding: 0.4rem 0;
-  width: 100%;
+.sellToAmazon {
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: center;
+}
+.sellToAmazon button {
+  padding: 0.4rem;
+  background-color: white;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.05);
 }
