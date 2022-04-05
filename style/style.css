@@ -261,6 +261,24 @@ main {
   border-top: 1px solid rgb(207, 200, 200);
 
   padding: 1rem 1rem;
+  position: relative;
+}
+#trend_related_products .arrow_right,
+#trend_related_products .arrow_left {
+  top: 50%;
+  font-size: 1rem;
+  position: absolute;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(207, 200, 200);
+}
+.arrow_right {
+  right: 10px;
+}
+.arrow_left {
+  left: 10px;
 }
 
 .trend_related_products_heading {
