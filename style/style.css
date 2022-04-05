@@ -10,6 +10,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
 }
+.body {
+  mix-blend-mode: multiply;
+}
 .smallImg {
   border: 1px solid grey;
   cursor: pointer;
@@ -29,7 +32,13 @@ a {
 
   cursor: pointer;
 }
+
 /*main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 /*advertising_bar */
 #advertising_bar {
   position: relative;
@@ -39,6 +48,7 @@ a {
   justify-content: center;
   background-color: #edeff1;
 }
+
 #advertising_bar a {
   position: absolute;
   width: 100%;
@@ -64,15 +74,15 @@ a {
 /* product details section*/
 #products_details {
   display: flex;
-  height: 75vh;
+  height: 80vh;
   width: 100vw;
   align-items: center;
   padding: 0 1rem 0;
   gap: 1rem;
 }
 /* product details section left column*/
-#left_col {
-  width: 45vw;
+#products_details_left_col {
+  width: 40vw;
 }
 .product_profileImg {
   display: flex;
@@ -103,7 +113,7 @@ a {
   width: 100%;
 }
 /* product details section center column*/
-#center_col {
+#products_details_center_col {
   max-width: 30vw;
   width: 90%;
 }
@@ -158,12 +168,13 @@ a {
   margin-left: 1rem;
 }
 /* product details section right col*/
-#right_col {
+#products_details_right_col {
   padding: 2rem;
   max-width: 20vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -215,4 +226,78 @@ a {
   padding: 0.4rem;
   background-color: white;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.products_details_right_col_advertising {
+  position: relative;
+  border: 1px solid rgb(207, 200, 200);
+  padding: 0.5rem;
+}
+.products_details_right_col_advertising {
+  padding: 0.5rem;
+}
+
+.products_details_right_col_advertising_img img {
+  padding: 0.5rem;
+  width: 13rem;
+  height: 8rem;
+}
+.products_details_right_col_advertising a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.advertising_details_product_price img {
+  width: 30px;
+  height: 10px;
+}
+
+/** trend_related_products section */
+#trend_related_products {
+  border-top: 1px solid rgb(207, 200, 200);
+
+  padding: 1rem 1rem;
+}
+
+.trend_related_products_heading {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.trend_related_products_carousal {
+}
+
+#trend_related_products .carousal_list {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+#trend_related_products .carousal_list_item {
+  list-style: none;
+}
+
+#trend_related_products .carousal_list_item:last-child {
+}
+
+#trend_related_products .carousal_list_item_img {
+  width: 10rem;
+}
+
+#trend_related_products .carousal_list_item_img img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.carousal_list_item_rating_stars {
 }
